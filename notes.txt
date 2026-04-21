@@ -1,0 +1,6 @@
+switch sides on project patch bay
+
+select patch located to the left or right of the other rows
+
+alter cable color beteween 3 each time a cable is pulled
+

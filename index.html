@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body class="projects">
+
+
+<nav class="navbar">
+    <div class="navbar__container">
+        <a id="navbar__logo" >Oskar Lövgren</a>
+
+
+    </div>
+
+    
+</nav>
+
+<div class="page page--projects">
+    <div class="projects-panel">
+
+        <div class="project-patchbay" data-active-project="pitch-imperfect">
+            
+
+            <div class="project-source">
+                <div class="project-source__hole" id="project-source-hole"></div>
+                <span class="project-source__label">Select</span>
+            </div>
+
+            <div class="project-jacks">
+
+                <div class="project-jack" data-project="sound-step">
+                    <div class="hole"></div>
+                    <span class="project-jack__label">SoundStep</span>
+                </div>
+
+                <div class="project-jack" data-project="david-guetta">
+                    <div class="hole"></div>
+                    <span class="project-jack__label">Virtual David Guetta</span>
+                </div>
+
+
+                <div class="project-jack" data-project="pitch-imperfect">
+                    <div class="hole"></div>
+                    <span class="project-jack__label">Pitch Imperfect</span>
+                </div>
+
+                <div class="project-jack" data-project="fm-synthesis">
+                    <div class="hole"></div>
+                    <span class="project-jack__label">FM Synthesis</span>
+                </div>
+
+                <div class="project-jack" data-project="drumboks">
+                    <div class="hole"></div>
+                    <span class="project-jack__label">DRUMBOKS</span>
+                </div>
+
+                <div class="project-jack" data-project="burden-of-proof">
+                    <div class="hole"></div>
+                    <span class="project-jack__label">Burden of Proof</span>
+                </div>
+
+
+            </div>
+
+
+            <svg id="project-cable-layer" class="project-cable-layer"></svg>
+        </div>
+
+        <aside class="scope-panel">
+            <div class="scope-panel__label">Oskilloscope</div>
+            <div class="scope-screen">
+                <canvas id="scope-canvas" width="520" height="320"></canvas>
+                <div class="scope-readout">
+                    CURRENTLY PLAYING: HEARTLESS — VIVECA
+                </div>
+            </div>
+            <div class="scope-controls">
+
+            <a
+                href="https://open.spotify.com/artist/2uYfZgbgpBFnJMlNnHCdLe?si=jZtJ1rQcSK-JJG_fZy48-Q"
+                class="scope-switch"
+                target="_blank"
+                rel="noreferrer"
+            >
+                <span class="scope-switch__lamp"></span>
+                <span class="scope-switch__text">Spotify</span>
+            </a>
+        </div>
+        </aside>
+
+        
+
+        <div class="project-display" id="project-display">
+            <div class="project-display__media" id="project-media"></div>
+
+            <div class="project-display__text">
+                <div class="project-display__eyebrow">ACTIVE MODULE</div>
+                <div class="project__head" id="project-title"></div>
+                <div class="project__head2" id="project-subtitle"></div>
+                <h3 id="project-date"></h3>
+                <h4 id="project-collab"></h4>
+                <p id="project-description"></p>
+                <div id="project-extra"></div>
+            </div>
+        </div>
+
+
+        <div class="projects-divider" aria-hidden="true"></div>
+
+    </div>
+</div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
