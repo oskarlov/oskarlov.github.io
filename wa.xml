@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Audio>
+
+    <GainNode id="master" gain="$volume">
+
+        <!-- LFO / modulator -->
+        <Mixer class="FM" gain="100" output="none">
+            <OscillatorNode
+                id="lfo"
+                type="sine"
+                frequency="$lfo"
+            />
+        </Mixer>
+
+        <!-- Carrier -->
+        <OscillatorNode
+            id="osc"
+            type="sawtooth"
+            frequency="440"
+            detune=".FM"
+        />
+
+    </GainNode>
+
+</Audio>

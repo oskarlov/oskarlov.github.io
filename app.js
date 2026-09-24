@@ -266,7 +266,7 @@ if (projectPatchbay && projectSvg) {
         "david-guetta": {
             title: "Is David Guetta a fraud?",
             subtitle: "A Feature-Based Playlist Optimization Inspired by Professional DJ Practices",
-            date: "2021-11-15 - 2022-01-12",
+            date: "2025-09-15 - 2025-10-20",
             collab: "Jarl Stephansson and Filip Maras",
             description: "A music playlist sorter that calculates the optimal order for a DJ to move through a set of songs with minimal jumps in tempo and key between each song. This happens through a pipeline of custom algorithms for tempo and key detection as well as cost minimization and evaluation against real DJ-sets. Key detection used a template-based method and was specifically adjusted to perform well on EDM music.",
             media: `<img src="images/David_Guetta_2013-04-12_001.jpg" alt="FM Synthesis schematic">`,
@@ -276,10 +276,22 @@ if (projectPatchbay && projectSvg) {
         "sound-step": {
             title: "SoundStep",
             subtitle: "A Mobile sonification system for real time running feedback",
-            date: "2021-11-15 - 2022-01-12",
+            date: "2025-01-18 - ",
             collab: "David Segal",
             description: "Developed SoundStep, a sonification platform that analyzes running data and provides real-time auditory feedback using only a smartphone and headphones, supporting both research and enhancing the runner’s experience. So far, the project has been presented at the AM.ICAD 2025 and SportsHCI 25 as demos and also participated in the International Joint Student Research Symposium at BINUS University 2025, and is still in active development.",
             media: `<img src="images/motion_metrix.JPG" alt="SoundStep at MotionMetrix">`,
+            extra: ``
+        },
+        
+        "clusters": {
+            title: "Clusters",
+            subtitle: "Interactive Music System",
+            date: "2025-04-21 - 2025-05-25",
+            collab: "Barry John Wootton, Sze Wing Chan, Yu Lu",
+            description: "Developed SoundStep, a sonification platform that analyzes running data and provides real-time auditory feedback using only a smartphone and headphones, supporting both research and enhancing the runner’s experience. So far, the project has been presented at the AM.ICAD 2025 and SportsHCI 25 as demos and also participated in the International Joint Student Research Symposium at BINUS University 2025, and is still in active development.",
+            media: `
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gvUGEJHknWg?si=SLejMZ1Dd9LY7mke" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            `,
             extra: ``
         }
     };

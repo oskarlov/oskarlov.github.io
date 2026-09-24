@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WebAudioXML Test</title>
+</head>
+<body>
+
+    <h1>Simple synth</h1>
+
+    <button id="startButton">Start</button>
+
+    <p>
+        Frequency:
+        <input
+            id="frequency"
+            type="range"
+            min="100"
+            max="1000"
+            value="440"
+        >
+        <span id="frequencyValue">440</span> Hz
+    </p>
+
+    <p>
+        Volume:
+        <input
+        id="volume"
+        type="range"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0"
+        >
+    </p>
+
+    <p>
+        LFO:
+        <input
+        id="lfo"
+        type="range"
+        min="0"
+        max="100"
+        step="1"
+        value="0"
+        >
+    </p>
+
+
+    <script src="WebAudioXML.js" data-source="wa.xml"></script>
+
+    <script>
+
+    waxml.setVariable("volume", 0);
+    const volumeSlider = document.querySelector("#volume");
+
+    volumeSlider.addEventListener("input", event => {
+    const gain = event.target.value;
+
+    console.log("gain:", gain);
+
+    waxml.setVariable("volume", gain);
+    });
+    </script>
+
+    <script>
+
+    waxml.setVariable("lfo", 0);
+    const lfoSlider = document.querySelector("#lfo");
+
+    lfoSlider.addEventListener("input", event => {
+    const freq = event.target.value;
+
+    console.log("freq:", freq);
+
+    waxml.setVariable("lfo", freq);
+    });
+    </script>
+
+
+</body>
+</html>
