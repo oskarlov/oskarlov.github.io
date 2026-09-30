@@ -293,10 +293,21 @@ if (projectPatchbay && projectSvg) {
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gvUGEJHknWg?si=SLejMZ1Dd9LY7mke" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             `,
             extra: ``
+        },
+        "mixmatch": {
+            title: "MixMatch",
+            subtitle: "A real-time multiplayer music quiz built around your Spotify playlists",
+            date: "2025-09-01 - 2025-11-20",
+            collab: "Edvin Christenson, Niklas Dahlbom, Viktor Hamberg",
+            description: "MixMatch is a real-time multiplayer music quiz where players choose a Spotify playlist and the game generates questions based on its tracks and artists. I developed the question-generation engine and integrated Google Gemini for dynamically generated music trivia, while also contributing to the Node.js/Express and Socket.IO backend and working closely with the Spotify integration.",
+            media: `<img src="images/mixmatch.png" alt="MixMatch multiplayer music quiz">`,
+            extra: ``
         }
+
+
     };
 
-    let activeProject = projectPatchbay.dataset.activeProject || "pitch-imperfect";
+    let activeProject = projectPatchbay.dataset.activeProject || "sound-step";
     let projectDragging = false;
 
     const { pathEl: projectPathEl, plugEl: projectPlugEl } = createSvgCable(projectSvg);
